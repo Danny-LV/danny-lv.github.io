@@ -1,0 +1,105 @@
+/* THEMES */
+
+/* Apple */
+.apple {
+    background: #f5923e;
+    background: -moz-linear-gradient(45deg,  #f5923e 0%, #333333 61%);
+    background: -webkit-linear-gradient(45deg,  #f5923e 0%,#333333 61%);
+    background: linear-gradient(45deg,  #f5923e 0%,#333333 61%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5923e', endColorstr='#333333',GradientType=1 );
+  }
+  
+  .calculator-display.apple {
+    background: #333;
+  }
+  
+  .calculator-key.nm.apple {
+    background: rgb(192, 192, 192);
+    color: #1c1c1c;
+    border: 0.5px solid #777;
+  }
+  
+  .calculator-key.op.apple {
+    background: #f5923e;
+    color: #fafafa;
+    border: 0.5px solid #777;
+  }
+  
+  .calculator-key.op.op-active.apple {
+    border: 2px solid #4f4f4f;
+  }
+  
+  .calculator-key.sp.apple {
+    background: #949597;
+    color: #fafafa;
+    border: 0.5px solid #777;
+  }
+  
+  
+  /* BMB */
+  
+  .bmb {
+    background: #1c1f24;
+    background: -moz-linear-gradient(45deg,  #1c1f24 0%, #37cc9f 100%);
+    background: -webkit-linear-gradient(45deg,  #1c1f24 0%,#37cc9f 100%);
+    background: linear-gradient(45deg,  #1c1f24 0%,#37cc9f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1c1f24', endColorstr='#37cc9f',GradientType=1 );
+  }
+  
+  .calculator-display.bmb {
+    background: rgb(28,31,36);
+    color: rgb(55,204,159);
+  }
+  
+  .calculator-key.nm.bmb {
+    background: rgb(220, 225, 221);
+  }
+  
+  .calculator-key.op.bmb {
+    background: rgb(29,33,42);
+    background: rgb(164,175,193);
+  }
+  
+  .calculator-key.op.op-active.bmb {
+    border: 2px solid rgb(28,31,36);
+  }
+  
+  .calculator-key.sp.bmb {
+    background: rgb(225,108,73);
+    color: #fff;
+  }
+  
+
+  /* Light */
+  
+  .light {
+    background: #ee5a62;
+    background: -moz-linear-gradient(45deg,  #ee5a62 0%, #3487be 100%);
+    background: -webkit-linear-gradient(45deg,  #ee5a62 0%,#3487be 100%);
+    background: linear-gradient(45deg,  #ee5a62 0%,#3487be 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee5a62', endColorstr='#3487be',GradientType=1 );
+  }
+  
+  .calculator-display.light {
+    background: rgb(37,37,37);
+    color: rgb(171,171,171);
+  }
+  
+  .calculator-key.nm.light {
+    background: rgb(248,248,248);
+     color: rgb(51,51,51);
+  }
+  
+  .calculator-key.op.light {
+    background: rgb(52,135,190);
+    color: #fff;
+  }
+  
+  .calculator-key.op.op-active.light {
+    border: 2px solid rgb(204, 204, 204);
+  }
+  
+  .calculator-key.sp.light {
+    background: rgb(238,90,98);
+    color: #fff;
+  }

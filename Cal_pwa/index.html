@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+  <title>Calculator</title>
+
+  <meta name="description" content="Calculator">
+  <meta name="application-name" content="Calculator">
+  <meta name="author" content="Danny">
+  <meta name="cpwa" content="Calculator">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Calculator">
+  <meta name="msapplication-TileColor" content="#f5923e">
+  <meta name="msapplication-config" content="img/icons/browserconfig.xml">
+  <meta name="theme-color" content="#f5923e">
+  <meta property="og:image" content="img/icons/android-chrome-512x512.png">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="img/icons/safari-pinned-tab.svg" color="#f5923e">
+  <link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
+
+  
+  <link href="img/splash/iphonexr_splash.png" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+  
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="themes.css">
+</head>
+<body>
+
+  <div id="calculator" class="calculator">
+    <a id="calculator-set-theme" href="#">✎</a>
+    <div class="calculator-keys">
+      <div id="calculator-display" class="calculator-display"></div>
+      <button class="calculator-key sp" data-type="allclear" value="all-clear">AC</button>
+      <button class="calculator-key sp" data-type="clear" value="clear">C</button>
+      <button class="calculator-key sp" data-type="posneg" value="posneg">±</button>
+      <button class="calculator-key op" data-type="operator" value="/">&divide;</button>
+
+      <button class="calculator-key nm" data-type="digit" value="7">7</button>
+      <button class="calculator-key nm" data-type="digit" value="8">8</button>
+      <button class="calculator-key nm" data-type="digit" value="9">9</button>
+      <button class="calculator-key op" data-type="operator" value="*">&times;</button>
+
+      <button class="calculator-key nm" data-type="digit" value="4">4</button>
+      <button class="calculator-key nm" data-type="digit" value="5">5</button>
+      <button class="calculator-key nm" data-type="digit" value="6">6</button>
+      <button class="calculator-key op" data-type="operator" value="-">-</button>
+
+      <button class="calculator-key nm" data-type="digit" value="1">1</button>
+      <button class="calculator-key nm" data-type="digit" value="2">2</button>
+      <button class="calculator-key nm" data-type="digit" value="3">3</button>
+      <button class="calculator-key op" data-type="operator" value="+">+</button>
+
+      <button class="calculator-key wide nm" data-type="digit" value="0">0</button>
+      <button class="calculator-key nm" data-type="decimal" value=".">.</button>
+      <button class="calculator-key op" data-type="operator" value="=">=</button>
+    </div>
+  </div>
+
+  <div id="screen-instructions" class="screen-instructions">
+    <div>
+      <img class="screen-instructions-icon" src="img/icons/apple-touch-icon.png" />
+      <h1>Calculator</h1>
+      <ol class="install-instructions">
+        <li>Open in Mobile Safari on your iPhone</li>
+        <li>Tap the 'Share' button</li>
+        <li>Choose 'Add to Home Screen'</li>
+      </ol>
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="close-modal" class="modal-close">&times;</span>
+      <h3 class="theme-title">
+        Select a theme
+      </h3>
+      <div class="radio" id="theme-select">
+
+         <div class="theme">
+          <input type="radio" id="apple" name="color" value="apple" onclick="setTheme('apple')">
+          <label for="apple">
+            <span class="apple">
+              <img src="img/check.svg" alt="Checked Icon" />
+            </span>
+          </label>
+          <label class="radio-label">Apple</label>
+        </div>
+
+        <div class="theme">
+          <input type="radio" id="light" name="color" onclick="setTheme('light')" value="light">
+          <label for="light">
+            <span class="light">
+              <img src="img/check.svg" alt="Checked Icon" />
+            </span>
+          </label>
+          <label class="radio-label">Light</label>
+        </div>
+
+        <div class="theme">
+          <input type="radio" id="bmb" name="color" onclick="setTheme('bmb')" value="bmb">
+          <label for="bmb">
+            <span class="bmb">
+              <img src="img/check.svg" alt="Checked Icon" />
+            </span>
+          </label>
+          <label class="radio-label">BMB</label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="calculator.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
